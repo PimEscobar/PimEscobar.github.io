@@ -224,13 +224,7 @@ background-position: -48px 0;
 }
 /* Device Scaling
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
+/* tablet */
 @media only screen and (max-width: 959px) 
 {
 	.container
@@ -283,6 +277,33 @@ background-position: -48px 0;
 		border-top: 1px solid #ccc;
 		margin-top: 42px;
 		padding: 28px;
+	}
+}
+
+/* phablet (also point when grid becomes active) */
+@media only screen and (min-width: 480px) and (max-width: 767px) 
+{
+	.portfolio .four.columns
+	{
+		width: 50%;
+	}
+}
+
+/* mobile */
+@media only screen and (max-width: 479px) 
+{
+	.portfolio .four.columns
+	{
+		width: 100%;
+	}
+	.footer
+	{
+		text-align: center;
+	}
+	.contact, .social
+	{
+		float: none;
+		display: block;
 	}
 }
 
